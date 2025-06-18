@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxResultados = new System.Windows.Forms.ListBox();
+            this.lsbResultados = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBoxResultados
+            // lsbResultados
             // 
-            this.listBoxResultados.FormattingEnabled = true;
-            this.listBoxResultados.ItemHeight = 20;
-            this.listBoxResultados.Items.AddRange(new object[] {
+            this.lsbResultados.FormattingEnabled = true;
+            this.lsbResultados.ItemHeight = 20;
+            this.lsbResultados.Items.AddRange(new object[] {
             "listBoxResultados"});
-            this.listBoxResultados.Location = new System.Drawing.Point(13, 14);
-            this.listBoxResultados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listBoxResultados.Name = "listBoxResultados";
-            this.listBoxResultados.Size = new System.Drawing.Size(328, 144);
-            this.listBoxResultados.TabIndex = 0;
+            this.lsbResultados.Location = new System.Drawing.Point(13, 14);
+            this.lsbResultados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lsbResultados.Name = "lsbResultados";
+            this.lsbResultados.Size = new System.Drawing.Size(328, 144);
+            this.lsbResultados.TabIndex = 0;
             // 
             // button1
             // 
@@ -61,11 +61,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 207);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBoxResultados);
+            this.Controls.Add(this.lsbResultados);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormVer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormVer";
             this.ResumeLayout(false);
 
@@ -73,6 +74,6 @@
 
         #endregion
         private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.ListBox listBoxResultados;
+        public System.Windows.Forms.ListBox lsbResultados;
     }
 }

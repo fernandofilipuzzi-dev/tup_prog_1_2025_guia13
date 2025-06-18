@@ -34,7 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMayores = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -110,16 +110,16 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "tbDNI";
             // 
-            // button1
+            // btnMayores
             // 
-            this.button1.Location = new System.Drawing.Point(262, 29);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 70);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Ver Mayores en Monto";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMayores.Location = new System.Drawing.Point(262, 29);
+            this.btnMayores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMayores.Name = "btnMayores";
+            this.btnMayores.Size = new System.Drawing.Size(111, 70);
+            this.btnMayores.TabIndex = 5;
+            this.btnMayores.Text = "Ver Mayores en Monto";
+            this.btnMayores.UseVisualStyleBackColor = true;
+            this.btnMayores.Click += new System.EventHandler(this.btnMayores_Click);
             // 
             // groupBox2
             // 
@@ -168,7 +168,7 @@
             // 
             this.groupBox3.Controls.Add(this.btnAgregarExpediente);
             this.groupBox3.Controls.Add(this.btnVerListado);
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.btnMayores);
             this.groupBox3.Location = new System.Drawing.Point(13, 14);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
@@ -207,7 +207,7 @@
         private System.Windows.Forms.Button btnVerListado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMayores;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;

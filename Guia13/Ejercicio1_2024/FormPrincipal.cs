@@ -25,12 +25,39 @@ namespace Parcial2
 
         private void btnVerListado_Click(object sender, EventArgs e)
         {
+            FormVer formVer = new FormVer();
 
+            servicio.OrdenarExpedientes();
+
+            formVer.lsbResultados.Items.Clear();
+            for (int n = 0; n < servicio.VerContador(); n++)
+            {
+                int nro, dni; double monto;
+                servicio.VerExpediente(n, out nro, out dni, out monto);
+
+                formVer.lsbResultados.Items.Add($"{nro} - {dni} - {monto,10}");
+            }
+            formVer.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnMayores_Click(object sender, EventArgs e)
         {
+            FormVer formVer = new FormVer();
 
+            int cantidad;
+            int[] idxs=servicio.MayoresAlPromedio(out cantidad);
+
+            formVer.lsbResultados.Items.Clear();
+            for (int n = 0; n < cantidad; n++)
+            {
+                int idx= idxs[n];
+
+                int nro, dni; double monto;
+                servicio.VerExpediente(idx, out nro, out dni, out monto);
+
+                formVer.lsbResultados.Items.Add($"{nro} - {dni} - {monto,10}");
+            }
+            formVer.ShowDialog();
         }
     }
 }
