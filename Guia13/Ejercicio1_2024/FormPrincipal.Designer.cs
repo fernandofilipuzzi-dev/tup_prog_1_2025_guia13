@@ -38,7 +38,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNroCausa = new System.Windows.Forms.TextBox();
-            this.btnVerPorNumero = new System.Windows.Forms.Button();
+            this.btnVerCausaPorNumero = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -126,7 +126,7 @@
             // 
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.tbNroCausa);
-            this.groupBox2.Controls.Add(this.btnVerPorNumero);
+            this.groupBox2.Controls.Add(this.btnVerCausaPorNumero);
             this.groupBox2.Location = new System.Drawing.Point(13, 243);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
@@ -155,16 +155,16 @@
             this.tbNroCausa.TabIndex = 7;
             this.tbNroCausa.Text = "tbNroCausa";
             // 
-            // btnVerPorNumero
+            // btnVerCausaPorNumero
             // 
-            this.btnVerPorNumero.Location = new System.Drawing.Point(261, 42);
-            this.btnVerPorNumero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnVerPorNumero.Name = "btnVerPorNumero";
-            this.btnVerPorNumero.Size = new System.Drawing.Size(111, 51);
-            this.btnVerPorNumero.TabIndex = 7;
-            this.btnVerPorNumero.Text = "Ver";
-            this.btnVerPorNumero.UseVisualStyleBackColor = true;
-            this.btnVerPorNumero.Click += new System.EventHandler(this.btnVerPorNumero_Click);
+            this.btnVerCausaPorNumero.Location = new System.Drawing.Point(261, 44);
+            this.btnVerCausaPorNumero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerCausaPorNumero.Name = "btnVerCausaPorNumero";
+            this.btnVerCausaPorNumero.Size = new System.Drawing.Size(111, 49);
+            this.btnVerCausaPorNumero.TabIndex = 7;
+            this.btnVerCausaPorNumero.Text = "Ver Causa";
+            this.btnVerCausaPorNumero.UseVisualStyleBackColor = true;
+            this.btnVerCausaPorNumero.Click += new System.EventHandler(this.btnVerCausaPorNumero_Click);
             // 
             // groupBox3
             // 
@@ -214,7 +214,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNroCausa;
-        private System.Windows.Forms.Button btnVerPorNumero;
+        private System.Windows.Forms.Button btnVerCausaPorNumero;
         private System.Windows.Forms.Button btnVerExpedientes;
         private System.Windows.Forms.GroupBox groupBox3;
     }

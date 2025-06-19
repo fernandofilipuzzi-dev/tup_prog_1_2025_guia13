@@ -85,7 +85,7 @@ namespace Parcial2
             formVer.ShowDialog();
         }
 
-        private void btnVerPorNumero_Click(object sender, EventArgs e)
+        private void btnVerCausaPorNumero_Click(object sender, EventArgs e)
         {
             FormVer formVer = new FormVer();
 
