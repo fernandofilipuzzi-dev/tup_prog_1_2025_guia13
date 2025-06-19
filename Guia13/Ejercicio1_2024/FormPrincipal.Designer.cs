@@ -31,14 +31,14 @@
             this.btnAgregarExpediente = new System.Windows.Forms.Button();
             this.btnVerListado = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnVerExpedientes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbDNI = new System.Windows.Forms.TextBox();
             this.btnMayores = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tbNroCausa = new System.Windows.Forms.TextBox();
+            this.btnVerPorNumero = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,9 +69,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnVerExpedientes);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbDNI);
             this.groupBox1.Location = new System.Drawing.Point(13, 135);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
@@ -81,15 +81,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ver Expdientes de una persona";
             // 
-            // button3
+            // btnVerExpedientes
             // 
-            this.button3.Location = new System.Drawing.Point(262, 29);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 54);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Ver Expedientes";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnVerExpedientes.Location = new System.Drawing.Point(262, 29);
+            this.btnVerExpedientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerExpedientes.Name = "btnVerExpedientes";
+            this.btnVerExpedientes.Size = new System.Drawing.Size(111, 54);
+            this.btnVerExpedientes.TabIndex = 6;
+            this.btnVerExpedientes.Text = "Ver Expedientes";
+            this.btnVerExpedientes.UseVisualStyleBackColor = true;
+            this.btnVerExpedientes.Click += new System.EventHandler(this.btnVerExpedientes_Click);
             // 
             // label1
             // 
@@ -101,14 +102,14 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "DNI";
             // 
-            // textBox1
+            // tbDNI
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 44);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "tbDNI";
+            this.tbDNI.Location = new System.Drawing.Point(81, 44);
+            this.tbDNI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.Size = new System.Drawing.Size(148, 26);
+            this.tbDNI.TabIndex = 0;
+            this.tbDNI.Text = "tbDNI";
             // 
             // btnMayores
             // 
@@ -124,8 +125,8 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.tbNroCausa);
+            this.groupBox2.Controls.Add(this.btnVerPorNumero);
             this.groupBox2.Location = new System.Drawing.Point(13, 243);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
@@ -145,24 +146,25 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Número Causa";
             // 
-            // textBox2
+            // tbNroCausa
             // 
-            this.textBox2.Location = new System.Drawing.Point(81, 54);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "tbNroCausa";
+            this.tbNroCausa.Location = new System.Drawing.Point(81, 54);
+            this.tbNroCausa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbNroCausa.Name = "tbNroCausa";
+            this.tbNroCausa.Size = new System.Drawing.Size(148, 26);
+            this.tbNroCausa.TabIndex = 7;
+            this.tbNroCausa.Text = "tbNroCausa";
             // 
-            // button2
+            // btnVerPorNumero
             // 
-            this.button2.Location = new System.Drawing.Point(261, 42);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 51);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Ver";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnVerPorNumero.Location = new System.Drawing.Point(261, 42);
+            this.btnVerPorNumero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerPorNumero.Name = "btnVerPorNumero";
+            this.btnVerPorNumero.Size = new System.Drawing.Size(111, 51);
+            this.btnVerPorNumero.TabIndex = 7;
+            this.btnVerPorNumero.Text = "Ver";
+            this.btnVerPorNumero.UseVisualStyleBackColor = true;
+            this.btnVerPorNumero.Click += new System.EventHandler(this.btnVerPorNumero_Click);
             // 
             // groupBox3
             // 
@@ -208,12 +210,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMayores;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox tbNroCausa;
+        private System.Windows.Forms.Button btnVerPorNumero;
+        private System.Windows.Forms.Button btnVerExpedientes;
         private System.Windows.Forms.GroupBox groupBox3;
     }
 }
