@@ -37,7 +37,7 @@
             this.lsbResultados.FormattingEnabled = true;
             this.lsbResultados.ItemHeight = 20;
             this.lsbResultados.Items.AddRange(new object[] {
-            "listBoxResultados"});
+            "lsbResultados"});
             this.lsbResultados.Location = new System.Drawing.Point(13, 14);
             this.lsbResultados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lsbResultados.Name = "lsbResultados";
